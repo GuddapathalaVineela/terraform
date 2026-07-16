@@ -25,3 +25,29 @@ variable "sg_name" {
     description = "Security group namr to attach to EC2 instance"
     
 }
+
+variable "cidr"{
+    type = list
+    default = ["0.0.0.0/0"]
+}
+
+variable "ingress_from_port"{
+    default = 0
+}
+
+variable "ingress_to_port" {
+    default = 0
+}
+
+variable "eggress_from_port" {
+    default = 0
+}
+
+variable "eggress_to_port" {
+    default = 0
+}
+
+variable "protocol" {
+    type = string
+    default = -1
+}
