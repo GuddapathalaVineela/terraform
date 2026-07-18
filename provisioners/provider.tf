@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "remote-state-via"
-    key    = "locals-demo"
+    bucket = "remote-state-86s"
+    key    = "provisioners-demo"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
