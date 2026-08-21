@@ -10,8 +10,6 @@ resource "aws_instance" "demo" {
 }
 
 
-
-
 resource "aws_instance" "demo" {
   instance_type = "t3.micro"
   ami           = "ami-09c813fb71547fc4f"
@@ -22,3 +20,4 @@ resource "aws_instance" "demo" {
     Name = "import-demo-change"
   }
 }
+
